@@ -3,3 +3,5 @@
 #
 # Copyright (c) Robots in Schools Ltd. All rights reserved.
 #
+
+from .turtlex import *
