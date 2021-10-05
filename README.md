@@ -11,7 +11,22 @@ $ pip install turtlex
 ```
 
 ## Usage
-Documentation to follow.
+```python
+import turtle                                   # we'll need the turtle package
+import turtlex                                  # utils for window appearance and behaviour
+
+screen = turtle.Screen()                        # 'screen' is our window
+screen.title("Just wanted to say..")
+screen.setup(500, 400)                          # set the window size in pixels
+screen.bgcolor("lightgreen")                    # set the window background color
+
+# Say hello!
+turtle.write("Hello world!", font=("Courier", 30, "italic"), align="center")
+turtle.hideturtle()
+
+turtlex.front(screen, True)                     # keep on top of existing windows
+screen.mainloop()                               # process window events
+```
 
 <!-- ROADMAP -->
 ## Roadmap
