@@ -1,4 +1,4 @@
-# Python 'turtlex' Package
+# Python 'turtlex' package
 
 Python convenience functions to control turtle window appearance and behaviour.
 
@@ -11,6 +11,8 @@ $ pip install turtlex
 ```
 
 ## Usage
+Let's just jump straight in to a turtle program using the turtlex front() function.
+
 ```python
 import turtle                                   # we'll need the turtle package
 import turtlex                                  # utils for window appearance and behaviour
@@ -27,6 +29,66 @@ turtle.hideturtle()
 turtlex.front(screen, True)                     # keep on top of existing windows
 screen.mainloop()                               # process window events
 ```
+
+Easy! Here's the full list of functions.
+
+### Functions in the turtlex package
+
+```python
+front(screen, alwaysAtFront=False)
+```
+Send the window to the top of the window stack. If 'alwaysAtFront' is true then keep the window at the front.
+
+```python
+fullscreen(screen, full=True)
+```
+Setting 'full' to true will make the window fullscreen.
+
+```python
+opacity(screen, alpha=0.5)
+```
+Set the opacity of the window by setting the alpha value (0 - 1).
+
+```python
+disabled(screen, disabled=True)
+```
+Set 'disabled' to true to disable window management functions including maximise, minimise, move & close.
+
+```python
+toolwindow(screen, tool=True)
+```
+Setting 'tool' to true changes the title bar decoration to a toolbar.
+
+```python
+noresize(screen, x=False, y=False)
+```
+Setting 'x' and 'y' to true prevents window resizing in the horizontal and vertical direction respectively.
+
+```python
+nodecorate(screen, nodecorate=True)
+```
+Setting 'nodecorate' to true removes the windows decoration including title bar.
+
+```python
+minsize(screen, width=None, height=None)
+```
+Set the minimum size of the window in pixels.
+
+```python
+maxsize(screen, width=None, height=None)
+```
+Set the maximum size of the window in pixels.
+
+```python
+minimise(screen)
+minimize(screen)
+```
+Minimise the window.
+
+```python
+restore(screen)
+```
+Restore the window.
 
 <!-- ROADMAP -->
 ## Roadmap
