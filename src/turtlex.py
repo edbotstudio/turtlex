@@ -20,7 +20,7 @@ def fullscreen(screen, full=True):
 	screen._root.attributes("-fullscreen", full)
 
 #
-# Set the opacity (0 -> 1) of the window.
+# Set the opacity of the window by setting the alpha value (0 - 1).
 #
 def opacity(screen, alpha=0.5):
 	screen._root.attributes("-alpha", alpha)
