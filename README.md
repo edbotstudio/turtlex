@@ -34,61 +34,61 @@ Easy! Here's the full list of functions.
 
 ### Functions in the turtlex package
 
-```python
-front(screen, alwaysAtFront=False)
-```
 Send the window to the top of the window stack. If 'alwaysAtFront' is true then keep the window at the front.
-
 ```python
-fullscreen(screen, full=True)
+def front(screen, alwaysAtFront=False)
 ```
+
 Setting 'full' to true will make the window fullscreen.
-
 ```python
-opacity(screen, alpha=0.5)
+def fullscreen(screen, full=True)
 ```
+
 Set the opacity of the window by setting the alpha value (0 - 1).
-
 ```python
-disabled(screen, disabled=True)
+def opacity(screen, alpha=0.5)
 ```
+
 Set 'disabled' to true to disable window management functions including maximise, minimise, move & close.
-
 ```python
-toolwindow(screen, tool=True)
+def disabled(screen, disabled=True)
 ```
+
 Setting 'tool' to true changes the title bar decoration to a toolbar.
-
 ```python
-noresize(screen, x=False, y=False)
+def toolwindow(screen, tool=True)
 ```
+
 Setting 'x' and 'y' to true prevents window resizing in the horizontal and vertical direction respectively.
-
 ```python
-nodecorate(screen, nodecorate=True)
+def noresize(screen, x=False, y=False)
 ```
+
 Setting 'nodecorate' to true removes the windows decoration including title bar.
-
 ```python
-minsize(screen, width=None, height=None)
+def nodecorate(screen, nodecorate=True)
 ```
+
 Set the minimum size of the window in pixels.
-
 ```python
-maxsize(screen, width=None, height=None)
+def minsize(screen, width=None, height=None)
 ```
+
 Set the maximum size of the window in pixels.
-
 ```python
-minimise(screen)
-minimize(screen)
+def maxsize(screen, width=None, height=None)
 ```
+
 Minimise the window.
-
 ```python
-restore(screen)
+def minimise(screen)
+def minimize(screen)
 ```
+
 Restore the window.
+```python
+def restore(screen)
+```
 
 <!-- ROADMAP -->
 ## Roadmap
