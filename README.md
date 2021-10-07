@@ -39,51 +39,71 @@ Send the window to the top of the window stack. If 'alwaysAtFront' is true then 
 def front(screen, alwaysAtFront=False)
 ```
 
+***
+
 Setting 'full' to true will make the window fullscreen.
 ```python
 def fullscreen(screen, full=True)
 ```
 
-Set the opacity of the window by setting the alpha value (0 - 1).
+***
+
+Set the opacity of the window by setting the 'alpha' value (0 - 1).
 ```python
 def opacity(screen, alpha=0.5)
 ```
+
+***
 
 Set 'disabled' to true to disable window management functions including maximise, minimise, move & close.
 ```python
 def disabled(screen, disabled=True)
 ```
 
+***
+
 Setting 'tool' to true changes the title bar decoration to a toolbar.
 ```python
 def toolwindow(screen, tool=True)
 ```
+
+***
 
 Setting 'x' and 'y' to true prevents window resizing in the horizontal and vertical direction respectively.
 ```python
 def noresize(screen, x=False, y=False)
 ```
 
+***
+
 Setting 'nodecorate' to true removes the windows decoration including title bar.
 ```python
 def nodecorate(screen, nodecorate=True)
 ```
+
+***
 
 Set the minimum size of the window in pixels.
 ```python
 def minsize(screen, width=None, height=None)
 ```
 
+***
+
 Set the maximum size of the window in pixels.
 ```python
 def maxsize(screen, width=None, height=None)
 ```
+
+***
 
 Minimise the window.
 ```python
 def minimise(screen)
 def minimize(screen)
 ```
+
+***
 
 Restore the window.
 ```python
